@@ -20,7 +20,8 @@ typingTimer.addEventListener('click', function () {
     Interval = setInterval(startTimer, 10);
 
 
-    timerStop.onclick = function () {
+    timerStop.onclick = function (e) {
+        e.preventDefault();
         clearInterval(Interval);
     }
 
